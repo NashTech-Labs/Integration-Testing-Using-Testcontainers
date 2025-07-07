@@ -85,11 +85,11 @@ class OrderControllerIntegrationTest {
         );
 
         assertThat(orderRepository.existsById("order123")).isTrue();
-//        assertThat(response.getStatusCode().is2xxSuccessful()).isTrue();
+        assertThat(response.getStatusCode().is2xxSuccessful()).isTrue();
 
-//        // ✅ Wait for consumer to receive
-//        boolean messageConsumed = orderConsumer.getLatch().await(10, TimeUnit.SECONDS);
-//        assertThat(messageConsumed).isTrue();
-//        System.out.println("✅ Consumer got payload: " + orderConsumer.getPayload());
+        // ✅ Wait for consumer to receive
+        boolean messageConsumed = orderConsumer.getLatch().await(10, TimeUnit.SECONDS);
+        assertThat(messageConsumed).isTrue();
+        System.out.println("✅ Consumer got payload: " + orderConsumer.getPayload());
     }
 }
