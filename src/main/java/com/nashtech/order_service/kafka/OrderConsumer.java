@@ -1,7 +1,5 @@
 package com.nashtech.order_service.kafka;
 
-import com.nashtech.order_service.entities.Order;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 

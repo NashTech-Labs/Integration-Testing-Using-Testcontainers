@@ -21,12 +21,6 @@ public class OrderController {
     @Autowired
     private KafkaTemplate<String, Order> kafkaTemplate;
 
-//    @PostMapping
-//    public ResponseEntity<?> createOrder(@RequestBody Order order) {
-//        kafkaTemplate.send(AppConstants.ORDER_TOPIC_NAME, order.orderId(), order);
-//        return new ResponseEntity<>(Map.of("message", "Order posted successfully"), HttpStatus.OK);
-//    }
-
     @Autowired
     public OrderRepository orderRepository;
 
