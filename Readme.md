@@ -86,7 +86,7 @@ TestContainers is an open-source Java library that provides a lightweight and fl
 Clone the Repo:
 
 ```declarative
-git clone https://github.com/rahulsharma9001/Tech-hub-project.git
+git clone https://github.com/NashTech-Labs/Integration-Testing-Using-Testcontainers.git
 cd order-service
 ```
 ## Local Development Setup
